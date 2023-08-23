@@ -7,8 +7,22 @@
     
 */
 
+// Using switch statement
+
 const env = "DEV"; // Toggle between these possible values "DEV" | "STAGE" | "PROD"
 let databaseCredential = "devuser:password";
+
+switch (env){
+    case "DEV":
+     break;
+
+    case "STAGE":
+    databaseCredential = "stageuser:password";
+     break;
+    
+    case "PROD":
+    databaseCredential = "produser:password";
+}
 
 // Task: Add code here
 
